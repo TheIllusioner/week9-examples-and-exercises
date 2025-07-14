@@ -1,5 +1,5 @@
 import { collection, DocumentReference, getDocs, query, where } from "firebase/firestore";
-import { Firestore } from 'firebase/firestore';
+import { Firestore, setDoc, getDoc, updateDoc, doc, deleteDoc } from 'firebase/firestore';
 
 import { db } from "./config/firebase";
 import { Food, User } from "./types/types";
@@ -26,10 +26,14 @@ async function getUser(db: Firestore, name: string){
 
 async function addUser(db: Firestore, user: User){
     //add new user to user collection
+    const userRef = doc(db, "users", user.name);
+    await setDoc(userRef, user);
 }
 
 async function removeUser(db: Firestore, user: DocumentReference){
     //remove user from the user collection
+    //const userRef = doc(db, "users", user);
+    await deleteDoc(user);
 }
 
 async function getFoods(db: Firestore){

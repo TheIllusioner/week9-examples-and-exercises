@@ -6,14 +6,15 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAFkmhcLAx_qIBziMkLoUSmOr-YNBGZ42I",
-  authDomain: "bootcamp-sp25-sample.firebaseapp.com",
-  projectId: "bootcamp-sp25-sample",
-  storageBucket: "bootcamp-sp25-sample.firebasestorage.app",
-  messagingSenderId: "56170431770",
-  appId: "1:56170431770:web:e72f3b71548f5ff81018a3",
-  measurementId: "G-P01RKZ6X5S"
+  apiKey: "AIzaSyCn7I9l4ORxSQWMqemp8cyGF7mJeBCHHlc",
+  authDomain: "technica-fellows-s25.firebaseapp.com",
+  projectId: "technica-fellows-s25",
+  storageBucket: "technica-fellows-s25.firebasestorage.app",
+  messagingSenderId: "759901842353",
+  appId: "1:759901842353:web:9bb02bcab8529888d7ab90",
+  measurementId: "G-2E6W0QF74R"
 };
 
 // Initialize Firebase
